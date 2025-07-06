@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preety Sriwastava | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Preety Sriwastava</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn">🌗</button>
+      </nav>
+    </header>
+
+   <section id="hero">
+  <div class="glass-card hero-glow-border">
+    <div class="hero-name-wrapper">
+      <h1>Hello, I'm <span class="glow">Preety Sriwastava</span></h1>
+      <h2 class="typed-line"><span class="typing"></span></h2>
+    </div>
+    <div class="hero-btns">
+      <a href="#projects" class="neon-btn">Explore Projects</a>
+      <a href="assets/My_Resume.pdf" class="neon-btn" download>Download Resume</a>
+    </div>
+  </div>
+</section>
+
+
+    <section id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <img
+          src="assets/My_Professional_pic.jpg"
+          alt="Preety"
+          class="profile-img"
+        />
+        <div>
+          <p>
+            I’m a curious and passionate developer with a strong interest in
+            AI/ML and creative tech. I love turning ideas into impactful
+            projects — whether it’s predicting heart disease using deep learning
+            or building sleek, animated web apps. I'm always exploring new
+            technologies and pushing myself to build smarter, better, and more
+            meaningful solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2 data-aos="fade-up">Education</h2>
+
+      <div class="edu-full-card" data-aos="fade-up">
+        <h3>B.Tech in Computer Science & Engineering</h3>
+        <p>Bakhtiyarpur College Of Engineering, Patna</p>
+        <span class="edu-tag">2022 – 2025</span>
+      </div>
+
+      <div class="edu-full-card" data-aos="fade-up">
+        <h3>Diploma In Electronics Engineering</h3>
+        <p>Government Women's Polytechnic, Patna</p>
+        <span class="edu-tag">2019 – 2022</span>
+      </div>
+
+      <div class="edu-full-card" data-aos="fade-up">
+        <h3>Matriculation (10th)</h3>
+        <p>Aacharya SudarshanDham Mubarakpur, Sitamarhi</p>
+        <span class="edu-tag">2017 – 2019</span>
+      </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>Disease Prediction Model <span class="tag">AI/ML</span></h3>
+        <p>
+          Developed a machine learning system to predict diseases like heart and
+          liver conditions using real patient data. Focused on feature
+          selection, model evaluation, and accuracy optimization.
+        </p>
+        <p>
+          <strong>Tech Stack:</strong> Python, Scikit-learn, Pandas, Matplotlib
+        </p>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+    </section>
+
+    <div class="project-card" data-aos="fade-up">
+      <h3>Brain Tumor Detection <span class="tag">AI/ML</span></h3>
+      <p>
+        Designed a deep learning-based system to detect brain tumors from MRI
+        images using CNNs. Focused on preprocessing, model training, and
+        evaluation using image classification techniques.
+      </p>
+      <p>
+        <strong>Tech Stack:</strong> Python, TensorFlow, Keras, OpenCV, NumPy
+      </p>
+      <a href="#" class="project-link">View Project →</a>
+    </div>
+
+    <section id="skills" data-aos="fade-up">
+      <h2>Skills</h2>
+
+      <div class="skill-bar">
+        <label>Python</label>
+        <div class="bar"><div class="fill" style="width: 90%"></div></div>
+      </div>
+
+      <div class="skill-bar">
+        <label>Machine Learning</label>
+        <div class="bar"><div class="fill" style="width: 85%"></div></div>
+      </div>
+
+      <div class="skill-bar">
+        <label>HTML/CSS/JS</label>
+        <div class="bar"><div class="fill" style="width: 80%"></div></div>
+      </div>
+
+      <div class="skill-bar">
+        <label>Flask</label>
+        <div class="bar"><div class="fill" style="width: 70%"></div></div>
+      </div>
+
+      <div class="skill-bar">
+        <label>Git & GitHub</label>
+        <div class="bar"><div class="fill" style="width: 75%"></div></div>
+      </div>
+
+      <div class="skill-bar">
+        <label>TensorFlow</label>
+        <div class="bar"><div class="fill" style="width: 65%"></div></div>
+      </div>
+    </section>
+
+    <section id="certifications" data-aos="fade-up">
+      <h2>Certifications</h2>
+      <div class="cert-container">
+        <div class="cert-card">
+          <h3>AI/ML Internship</h3>
+          <p>YBI Foundation</p>
+          <span class="cert-tag">Dec 2024 – Jan 2025</span>
+        </div>
+
+        <div class="cert-card">
+          <h3>Deep Learning Specialization</h3>
+          <p>Coursera – Andrew Ng</p>
+          <span class="cert-tag">2024</span>
+        </div>
+
+        <div class="cert-card">
+          <h3>Data Analytics Virtual Experience</h3>
+          <p>Tata iQ – Forage</p>
+          <span class="cert-tag">2025</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <div class="contact-box">
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:pritysrivastava821@gmail.com"
+            >pritysrivastava821@gmail.com</a
+          >
+        </p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/preety-sriwastava-5b3b33261/"
+            target="_blank"
+            class="social-btn linkedin"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/prity2407"
+            target="_blank"
+            class="social-btn github"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div id="particles-js"></div>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+      particlesJS.load("particles-js", "particles.json", function () {
+        console.log("Particles.js config loaded");
+      });
+
+      const words = [
+        "Web Developer",
+        "Designer",
+        "AI Enthusiast",
+        "Freelancer",
+      ];
+      let i = 0,
+        j = 0,
+        currentWord = "",
+        isDeleting = false;
+
+      function type() {
+        currentWord = words[i];
+        const display = document.getElementById("typing");
+
+        display.innerHTML = isDeleting
+          ? currentWord.substring(0, j--)
+          : currentWord.substring(0, j++);
+
+        if (!isDeleting && j === currentWord.length) {
+          isDeleting = true;
+          setTimeout(type, 1500);
+        } else if (isDeleting && j === 0) {
+          isDeleting = false;
+          i = (i + 1) % words.length;
+          setTimeout(type, 500);
+        } else {
+          setTimeout(type, isDeleting ? 50 : 100);
+        }
+      }
+      document.addEventListener("DOMContentLoaded", type);
+    </script>
+
+    <footer>
+      <p>© 2025 Preety Sriwastava. All rights reserved.</p>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
+      const body = document.body;
+
+      themeToggle.addEventListener("click", () => {
+        body.classList.toggle("light-theme");
+
+        // Optional: change emoji icon based on mode
+        themeToggle.textContent = body.classList.contains("light-theme")
+          ? "☀️"
+          : "🌗";
+      });
+    </script>
+  </body>
+</html>
