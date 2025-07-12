@@ -3,15 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="I'm Preety Sriwastava — a passionate CSE student skilled in full-stack development, AI/ML, and data analytics. Explore my projects, resume, and contact details.">
     <title>Preety Sriwastava | Portfolio</title>
+    <link rel="icon" href="assets/Favicon.ico" type="image/x-icon" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"rel="stylesheet"/>
+
+     <!-- External CSS -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
-    <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){ dataLayer.push(arguments); }
+     gtag('js', new Date());
+     gtag('config', 'G-XXXXXXXXXX'); // Replace with your Measurement ID
+    </script>
 
     <style>
       html {
@@ -19,33 +29,45 @@
       }
     </style>
   </head>
+
+  <!--BODY OF HTML-->
   <body>
+    <!--particle in the background-->
+    <div id="particles-js"></div>
     <header>
       <nav>
-        <div class="logo">Preety Sriwastava</div>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#education"><i class="fas fa-user-graduate"></i> Education</a></li>
+          <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="#skills"><i class="fas fa-star"></i> Skills</a></li>
+          <li><a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
-        <button id="theme-toggle" class="theme-btn">🌗</button>
+        <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
       </nav>
     </header>
 
-   <section id="hero">
+<!-- HERO SECTION -->
+<section id="hero">
   <div class="glass-card hero-glow-border">
     <div class="hero-name-wrapper">
       <h1>Hello, I'm <span class="glow">Preety Sriwastava</span></h1>
-      <h2 class="typed-line"><span class="typing"></span></h2>
+      <h2 class="typed-line">I am <span id="typing-text" class="typing-text"></span><span class="cursor">|</span></h2>
     </div>
     <div class="hero-btns">
       <a href="#projects" class="neon-btn">Explore Projects</a>
-      <a href="assets/My_Resume.pdf" class="neon-btn" download>Download Resume</a>
+      <a href="assets/Resume.pdf" class="neon-btn" download>Download Resume</a>
     </div>
   </div>
 </section>
 
 
+
+<!--About section-->
     <section id="about" data-aos="fade-up">
       <h2>About Me</h2>
       <div class="about-container">
@@ -56,216 +78,307 @@
         />
         <div>
           <p>
-            I’m a curious and passionate developer with a strong interest in
-            AI/ML and creative tech. I love turning ideas into impactful
-            projects — whether it’s predicting heart disease using deep learning
-            or building sleek, animated web apps. I'm always exploring new
-            technologies and pushing myself to build smarter, better, and more
-            meaningful solutions.
+            I’m Preety Sriwastava — a highly motivated and growth-oriented
+            Computer Science Engineering student with a strong foundation in
+            programming, data analytics, and full-stack development. With
+            hands-on internship experience in Salesforce Development and Data
+            Analytics, I’ve gained practical exposure to real-world
+            problem-solving, process automation, and deriving insights from
+            large datasets. I have a deep interest in AI/ML, full-stack web
+            development, and impactful project building. From developing a
+            Disease Prediction Model using Machine Learning to building a
+            real-time GitHub Webhook Tracker using Flask and MongoDB, I love
+            turning technical knowledge into tangible, scalable solutions. I’m
+            proficient in Python, C++, and Java, and have worked with modern web
+            technologies like React.js, Node.js, Flask, MongoDB, and cloud tools
+            like Ngrok and GitHub Actions. I enjoy working on innovative ideas,
+            collaborating with others, and constantly expanding my skill set.
+            When I’m not coding, I love exploring design trends, participating
+            in virtual job simulations, and staying updated with the latest
+            advancements in tech. I'm looking forward to opportunities where I
+            can contribute to meaningful tech-driven solutions and grow
+            alongside like-minded professionals.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="education">
-      <h2 data-aos="fade-up">Education</h2>
-
-      <div class="edu-full-card" data-aos="fade-up">
-        <h3>B.Tech in Computer Science & Engineering</h3>
-        <p>Bakhtiyarpur College Of Engineering, Patna</p>
-        <span class="edu-tag">2022 – 2025</span>
+<!--Education Section-->
+<section id="education">
+  <h2>🎓 Education Timeline</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-icon">🎓</div>
+      <div class="timeline-content">
+        <h3>B.Tech in Computer Science</h3>
+        <span>2022 - 2025</span>
+        <p>Bakhtiyarpur College Of Engineering Patna, CGPA: 8.12</p>
       </div>
+    </div>
 
-      <div class="edu-full-card" data-aos="fade-up">
+    <div class="timeline-item">
+      <div class="timeline-icon">🏫</div>
+      <div class="timeline-content">
         <h3>Diploma In Electronics Engineering</h3>
-        <p>Government Women's Polytechnic, Patna</p>
-        <span class="edu-tag">2019 – 2022</span>
+        <span>2019 - 2022</span>
+        <p>Government Women's Polytechnic Patna, CGPA: 8.24</p>
       </div>
+    </div>
 
-      <div class="edu-full-card" data-aos="fade-up">
-        <h3>Matriculation (10th)</h3>
-        <p>Aacharya SudarshanDham Mubarakpur, Sitamarhi</p>
-        <span class="edu-tag">2017 – 2019</span>
+    <div class="timeline-item">
+      <div class="timeline-icon">📘</div>
+      <div class="timeline-content">
+        <h3>10th Grade (CBSE)</h3>
+        <span>2017 - 2019</span>
+        <p>Aacharya Sudarshan Vidyapeeth Mubarakpur Sitamarhi, CGPA: 9.2</p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
+<!--Project Section-->
     <section id="projects" data-aos="fade-up">
       <h2>Projects</h2>
 
-      <div class="project-card">
-        <h3>Disease Prediction Model <span class="tag">AI/ML</span></h3>
+      <div class="project-card" data-aos="fade-up">
+        <h3>🧠 GitHub Webhook Tracker <span class="tag">Full Stack</span></h3>
         <p>
-          Developed a machine learning system to predict diseases like heart and
-          liver conditions using real patient data. Focused on feature
-          selection, model evaluation, and accuracy optimization.
+          A full-stack web application that captures real-time GitHub events
+          (push, pull request, merge) using GitHub Webhooks. Flask backend logs
+          data into MongoDB, and the frontend displays events in a live-updating
+          dashboard using HTML, CSS, and JavaScript.
         </p>
         <p>
-          <strong>Tech Stack:</strong> Python, Scikit-learn, Pandas, Matplotlib
+          Integrated with <strong>Ngrok</strong> for public HTTPS access and
+          includes a dummy repo to trigger GitHub Actions.
         </p>
-        <a href="#" class="project-link">View Project →</a>
+        <p>
+          <strong>Tech Stack:</strong> Python (Flask), MongoDB, HTML, CSS,
+          JavaScript, Ngrok
+        </p>
+        <p>
+          🔗 <strong>Repositories:</strong><br />
+          •
+          <a href="https://github.com/prity2407/action-repo" target="_blank"
+            >action-repo</a
+          >
+          – Dummy repo to trigger actions<br />
+          •
+          <a href="https://github.com/prity2407/webhook-repo" target="_blank"
+            >webhook-repo</a
+          >
+          – Main Flask + MongoDB project
+        </p>
+        <a
+          href="https://github.com/prity2407/webhook-repo"
+          class="project-link"
+          target="_blank"
+          >View Project →</a
+        >
+      </div>
+
+      <div class="project-card" data-aos="fade-up">
+        <h3>
+          📊 Python Diwali Sales Analysis <span class="tag">Data Analysis</span>
+        </h3>
+        <p>
+          Explored Diwali sales data using Python in a Jupyter Notebook—cleaned
+          and transformed data from CSV, visualized insights using Pandas,
+          NumPy, Matplotlib, and Seaborn.
+        </p>
+        <p>
+          Key insights included identifying top customer demographics,
+          high-performing product categories and states, and uncovering trends
+          like highest sales among 26–35‑year‑old females in UP, Maharashtra,
+          and Karnataka.
+        </p>
+        <p>
+          <strong>Tech Stack:</strong> Python, Jupyter Notebook, Pandas, NumPy,
+          Matplotlib, Seaborn
+        </p>
+        <a
+          href="https://github.com/prity2407/python_diwali_sale_analysis"
+          class="project-link"
+          target="_blank">
+          View Notebook →
+        </a>
       </div>
     </section>
 
-    <div class="project-card" data-aos="fade-up">
-      <h3>Brain Tumor Detection <span class="tag">AI/ML</span></h3>
-      <p>
-        Designed a deep learning-based system to detect brain tumors from MRI
-        images using CNNs. Focused on preprocessing, model training, and
-        evaluation using image classification techniques.
-      </p>
-      <p>
-        <strong>Tech Stack:</strong> Python, TensorFlow, Keras, OpenCV, NumPy
-      </p>
-      <a href="#" class="project-link">View Project →</a>
-    </div>
+ <!--skill section-->
+  <section id="skills" class="skills-section">
+  <h2 class="section-title">Skills</h2>
 
-    <section id="skills" data-aos="fade-up">
-      <h2>Skills</h2>
 
-      <div class="skill-bar">
-        <label>Python</label>
-        <div class="bar"><div class="fill" style="width: 90%"></div></div>
-      </div>
+  <!-- Programming Languages -->
+  <div class="skill-category">
+    <h3>💻 Programming</h3>
+    <div class="skill"><span><i class="fab fa-python"></i> Python</span><div class="progress" style="--level: 90%"></div></div>
+     <div class="skill">
+    <span><i class="fas fa-code"></i> C</span>
+    <div class="progress" style="--level: 85%"></div>
+  </div>
+  <div class="skill">
+    <span><i class="fas fa-code"></i> C++</span>
+    <div class="progress" style="--level: 90%"></div>
+  </div>
+  <div class="skill">
+    <span><i class="fab fa-java"></i> Java</span>
+    <div class="progress" style="--level: 75%"></div>
+  </div>
 
-      <div class="skill-bar">
-        <label>Machine Learning</label>
-        <div class="bar"><div class="fill" style="width: 85%"></div></div>
-      </div>
+  <!-- Web Development -->
+  <div class="skill-category">
+    <h3>🌐 Web Development</h3>
+    <div class="skill"><span><i class="fab fa-html5"></i> HTML/CSS/JS</span><div class="progress" style="--level: 80%"></div></div>
+    <div class="skill"><span><i class="fab fa-react"></i> React.js</span><div class="progress" style="--level: 65%"></div></div>
+    <div class="skill"><span><i class="fas fa-fire"></i> Flask</span><div class="progress" style="--level: 60%"></div></div>  
+    <div class="skill"><span><i class="fab fa-node-js"></i> Node.js</span><div class="progress" style="--level: 60%"></div></div>
 
-      <div class="skill-bar">
-        <label>HTML/CSS/JS</label>
-        <div class="bar"><div class="fill" style="width: 80%"></div></div>
-      </div>
+  </div>
 
-      <div class="skill-bar">
-        <label>Flask</label>
-        <div class="bar"><div class="fill" style="width: 70%"></div></div>
-      </div>
+  
+  <!-- Tools -->
+  <div class="skill-category">
+    <h3>🛠 Tools</h3>
+    <div class="skill"><span><i class="fab fa-git-alt"></i> Git & GitHub</span><div class="progress" style="--level: 80%"></div></div>
+    <div class="skill"><span><i class="fas fa-code"></i> VS Code</span><div class="progress" style="--level: 85%"></div></div>
+    <div class="skill"><span><i class="fas fa-database"></i> SQL</span><div class="progress" style="--level: 75%"></div></div>
+    <div class="skill"><span><i class="fas fa-leaf"></i> MongoDB</span><div class="progress" style="--level: 70%"></div></div>
+    <div class="skill"><span><i class="fas fa-file-excel"></i> MS Excel</span><div class="progress" style="--level: 85%"></div></div>
 
-      <div class="skill-bar">
-        <label>Git & GitHub</label>
-        <div class="bar"><div class="fill" style="width: 75%"></div></div>
-      </div>
+  </div>
+</section>
 
-      <div class="skill-bar">
-        <label>TensorFlow</label>
-        <div class="bar"><div class="fill" style="width: 65%"></div></div>
-      </div>
-    </section>
+<!--certification section-->
+  <section id="certifications" data-aos="fade-up">
+  <h2>Certifications</h2>
+  <div class="cert-container">
 
-    <section id="certifications" data-aos="fade-up">
-      <h2>Certifications</h2>
-      <div class="cert-container">
-        <div class="cert-card">
-          <h3>AI/ML Internship</h3>
-          <p>YBI Foundation</p>
-          <span class="cert-tag">Dec 2024 – Jan 2025</span>
-        </div>
+    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_5xHZHLTfqiCYwRXgY_1751454696030_completion_certificate.pdf" target="_blank" class="cert-card">
+      <h3>Data Analytics Job Simulation (Forage)</h3>
+      <p>Deloitte Australia</p>
+      <span class="cert-tag">July 2025</span>
+    </a>
 
-        <div class="cert-card">
-          <h3>Deep Learning Specialization</h3>
-          <p>Coursera – Andrew Ng</p>
-          <span class="cert-tag">2024</span>
-        </div>
+    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_5xHZHLTfqiCYwRXgY_1751451262812_completion_certificate.pdf" target="_blank" class="cert-card">
+      <h3>Cyber Security Job Simulation (Forage)</h3>
+      <p>Deloitte Australia</p>
+      <span class="cert-tag">July 2025</span>
+    </a>
 
-        <div class="cert-card">
-          <h3>Data Analytics Virtual Experience</h3>
-          <p>Tata iQ – Forage</p>
-          <span class="cert-tag">2025</span>
-        </div>
-      </div>
-    </section>
+    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_5xHZHLTfqiCYwRXgY_1751900980028_completion_certificate.pdf" target="_blank" class="cert-card">
+      <h3>Data Analytics Virtual Experience (Forage)</h3>
+      <p>Tata iQ</p>
+      <span class="cert-tag">July 2025</span>
+    </a>
+  </div>
+</section>
 
+<!--contact section-->
     <section id="contact" data-aos="fade-up">
       <h2>Contact Me</h2>
       <div class="contact-box">
         <p>
+          <i class="fas fa-envelope"></i>
           <strong>Email:</strong>
           <a href="mailto:pritysrivastava821@gmail.com"
             >pritysrivastava821@gmail.com</a
           >
         </p>
+        <p>
+          <i class="fas fa-phone-alt"></i>
+          <strong>Phone:</strong>
+          <a href="tel:+919905602619">+91-9905602619</a>
+        </p>
+        <p>
+          <i class="fas fa-location-dot"></i>
+          <strong>Location:</strong> Sitamarhi, Bihar
+        </p>
+
         <div class="social-links">
           <a
             href="https://www.linkedin.com/in/preety-sriwastava-5b3b33261/"
             target="_blank"
             class="social-btn linkedin"
-            >LinkedIn</a
           >
-          <a
-            href="https://github.com/prity2407"
-            target="_blank"
-            class="social-btn github"
-            >GitHub</a
-          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/prity2407" target="_blank" class="social-btn github">
+          <i class="fab fa-github"></i> GitHub
+          </a>
         </div>
       </div>
-    </section>
 
-    <div id="particles-js"></div>
+  <!-- Contact Form -->
+  <div class="contact-form-container">
+    <form id="contact-form">
+       <input type="text" id="from_name" name="from_name" placeholder="Your Name" required />
+       <small id="name-msg" class="msg"></small>
 
-    <script>
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-      particlesJS.load("particles-js", "particles.json", function () {
-        console.log("Particles.js config loaded");
-      });
+       <input type="text" id="from_email" name="from_email" placeholder="Your Email" required />
+       <small id="email-msg" class="msg"></small>
 
-      const words = [
-        "Web Developer",
-        "Designer",
-        "AI Enthusiast",
-        "Freelancer",
-      ];
-      let i = 0,
-        j = 0,
-        currentWord = "",
-        isDeleting = false;
+       <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+       <small id="message-msg" class="msg"></small>
 
-      function type() {
-        currentWord = words[i];
-        const display = document.getElementById("typing");
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-status"></p>
+  </div>
+</section>
 
-        display.innerHTML = isDeleting
-          ? currentWord.substring(0, j--)
-          : currentWord.substring(0, j++);
 
-        if (!isDeleting && j === currentWord.length) {
-          isDeleting = true;
-          setTimeout(type, 1500);
-        } else if (isDeleting && j === 0) {
-          isDeleting = false;
-          i = (i + 1) % words.length;
-          setTimeout(type, 500);
-        } else {
-          setTimeout(type, isDeleting ? 50 : 100);
-        }
-      }
-      document.addEventListener("DOMContentLoaded", type);
-    </script>
+<!--ScrollToTop Button-->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
 
-    <footer>
-      <p>© 2025 Preety Sriwastava. All rights reserved.</p>
-    </footer>
+<!-- External Libraries -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+<script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script>
-      AOS.init();
-    </script>
 
-    <script>
-      const themeToggle = document.getElementById("theme-toggle");
-      const body = document.body;
+<!-- My own scripts -->
+ <script src="js/main.js"></script>
+<script src="js/typing.js"></script>
+<script src="js/theme-toggle.js"></script>
+<script src="js/form-handler.js"></script>
+<script src="js/hamburger.js"></script>
+<script src="js/scrollTop.js"></script>
 
-      themeToggle.addEventListener("click", () => {
-        body.classList.toggle("light-theme");
 
-        // Optional: change emoji icon based on mode
-        themeToggle.textContent = body.classList.contains("light-theme")
-          ? "☀️"
-          : "🌗";
-      });
-    </script>
-  </body>
+<!--Footer of website-->
+<footer id="footer">
+  <div class="footer-container">
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/preety-sriwastava-5b3b33261/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/prity2407" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="footer-nav">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+      <p class="footer-inline">
+       <i class="fas fa-map-marker-alt"></i> Sitamarhi, Bihar
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        ❤️ Built with  HTML, CSS & JavaScript
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        © 2025 Preety Sriwastava
+     </p>
+  </div>
+</footer>
+</body>
 </html>
