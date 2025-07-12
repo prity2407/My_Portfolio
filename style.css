@@ -887,6 +887,14 @@ body.light-theme footer p {
   }
 }
 
+/* Default Styles */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  align-items: center;
+}
+
 /* Hide hamburger by default */
 .hamburger {
   display: none;
@@ -895,7 +903,50 @@ body.light-theme footer p {
   cursor: pointer;
 }
 
-/* Responsive: Show hamburger on small screens */
+/* Theme button */
+.theme-btn {
+  background: transparent;
+  border: none;
+  color: #00f7ff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Responsive: Show hamburger and hide nav links */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 1rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #00f7ff70;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: right;
+  }
+
+  .theme-btn {
+    margin-left: 1rem;
+  }
+}
+
+/* Responsive: Show hamburger on small screens
 @media (max-width: 768px){
   nav ul.nav-links {
     position: absolute;
@@ -927,7 +978,7 @@ body.light-theme footer p {
   .theme-btn {
     margin-left: 1rem;
   }
-}
+} */
 
 /*scroll to top */
 #scrollTopBtn {
@@ -1107,49 +1158,3 @@ input.invalid, textarea.invalid {
 
 
 
-/* Base */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-  padding: 0 1rem;
-  position: relative;
-}
-
-nav ul.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-}
-
-/* Hamburger hidden by default */
-.hamburger {
-  display: none;
-  font-size: 1.5rem;
-  color: #00f7ff;
-  cursor: pointer;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  nav ul.nav-links {
-    display: none;
-    position: absolute;
-    top: 80px;
-    right: 1rem;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
-    border-radius: 12px;
-    padding: 1rem;
-    z-index: 1000;
-  }
-
-  nav ul.nav-links.show {
-    display: flex;
-  }
-}
