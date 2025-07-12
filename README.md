@@ -19,7 +19,7 @@ Welcome to my personal portfolio website! This is a fully responsive, animated, 
 
 ## 🚀 Live Demo
 
-👉 [Visit My Portfolio Website](#) *(Replace with your live URL)*
+👉 https://prity2407.github.io/My_Portfolio/
 
 ---
 
@@ -28,17 +28,17 @@ Welcome to my personal portfolio website! This is a fully responsive, animated, 
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Animations:** AOS (Animate on Scroll), Floating Elements
 - **Icons:** Font Awesome / Custom SVG
-- **Hosting:** GitHub Pages *(or Netlify/Vercel)*
+- **Hosting:** GitHub Pages
 
 ---
 
 
 ## 📂 Folder Structure
 
-/assets --> Images, resume PDF, etc.
+/assets --> Images, resume PDF, Favicon icon etc.
 index.html --> Main HTML structure
 style.css --> Stylesheet
-script.js --> Optional JS (if modularized)
+main.js, scrollTop.js etc---> Scripting 
 particles.json --> Particle.js configuration
 README.md --> You're here!
 
@@ -48,7 +48,7 @@ README.md --> You're here!
 
 ## 📸 Preview
 
-![Screenshot](assets/preview.png) *(Optional if you want to add a screenshot)*
+![Screenshot](assets/preview.png) 
 
 ---
 
