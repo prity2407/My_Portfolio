@@ -49,6 +49,8 @@ README.md --> You're here!
 ## 📸 Preview
 
 ![Screenshot](assets/preview.png)<img width="1850" height="873" alt="Screenshot 2025-07-12 174430" src="https://github.com/user-attachments/assets/1e661025-f492-4c66-b76a-f7e41ec3c62e" />
+<img width="1858" height="878" alt="Screenshot 2025-07-12 174443" src="https://github.com/user-attachments/assets/cb8fdd62-0702-48b5-8577-b2b81773ec02" />
+
 
 
 ---
